@@ -4,6 +4,9 @@
 
       <h1>Editing Book</h1>
 
+      <!--error message-->
+      <%= render 'layouts/error', obj: @book %>
+
       <!--投稿フォーム-->
       <%= form_with model: @book do |f| %>
         <div class="form-group">
@@ -21,7 +24,7 @@
       <div class="link mt-3">
         <%= link_to "Show", book_path(@book) %> | <%= link_to "Back", books_path %>
       </div>
-      
+
     </div>
   </div>
 </div>
