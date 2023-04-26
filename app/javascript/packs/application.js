@@ -14,6 +14,15 @@ import "bootstrap";
 import "../stylesheets/application"
 import "@fortawesome/fontawesome-free/js/all"
 
+require("chartkick")
+require("chart.js")
+
+import Chart from 'chart.js/auto';
+import jQuery from "jquery"
+global.$ = jQuery;
+window.$ = jQuery;
+global.Chart = Chart;
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
